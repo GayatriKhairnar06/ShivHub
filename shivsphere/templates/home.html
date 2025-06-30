@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShivSphere - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        a.nav-link:hover { color: #6f42c1 !important; text-decoration: underline; }
+        .hero { 
+            background: url('https://source.unsplash.com/1600x400/?mountain,sky') center/cover no-repeat; 
+            color: black; 
+            padding: 100px 0; 
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ShivSphere</a>
+            <div>
+                <a class="nav-link d-inline" href="/">Home</a>
+                <a class="nav-link d-inline" href="/about">About</a>
+                <a class="nav-link d-inline" href="/services">Services</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center">
+        <h1 class="display-3 fw-bold">Welcome to ShivSphere</h1>
+        <p class="lead">Your spiritual productivity hub</p>
+        <p>{{ current_date }}</p>
+    </div>
+
+    <!-- Content -->
+    <div class="container my-5">
+        <p class="lead text-center">
+            ShivHub is an all-in-one personal productivity and life management platform inspired by the power and discipline of Lord Shiva, designed to help users organize their tasks, documents, goals, and digital life in a structured and meaningful way. 
+            At its core is ShivSphere, the central Django-based system that interconnects various specialized modules: 
+            <b>RudraPlanner</b> for daily tasks and deadlines; 
+            <b>VedaVault</b> for storing notes and documents; 
+            <b>Karmalog</b> for logging activities and progress; 
+            <b>Mahakal Reminder</b> for timely alerts; 
+            <b>Trishul Tracker</b> for habit tracking; 
+            <b>ChandraSync</b> and <b>ShaktiSync</b> for data syncing; 
+            <b>Kailasa Connect</b> for collaboration; 
+            <b>Lingam Locker</b> for encrypted storage; 
+            <b>Tapas Timer</b> for focus with Pomodoro sessions.
+        </p>
+        <div class="text-center mt-4">
+            <a href="/contact" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-5">
+        &copy; 2025 ShivSphere. All rights reserved.
+    </footer>
+
+</body>
+</html>
